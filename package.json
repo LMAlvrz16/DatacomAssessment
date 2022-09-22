@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "test": "npx playwright test",
+    "test:debug": "npx playwright test --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.19.0"
+  },
+  "dependencies": {
+    "clipboardy": "^3.0.0"
+  }
+}
