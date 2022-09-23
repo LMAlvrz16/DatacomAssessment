@@ -176,8 +176,8 @@ export class PayeesPage extends Common{
     // This will verify if required field error pops up
     async VerifyIfErrorPopsUp(){
         try{
-            if(await this.ElementExist(this.div_ErrField, 8000) &&
-            await this.ElementExist(this.div_ErrPayeeName, 8000)){
+            if(await this.ElementExist(this.div_ErrField, 1000) &&
+            await this.ElementExist(this.div_ErrPayeeName, 1000)){
                 var errMsg1 = await this.GetElementText(this.div_ErrField, "Modal Error Message");
                 var errMsg2 = await this.GetElementText(this.div_ErrPayeeName, "Required Field");
                 console.log(errMsg1);

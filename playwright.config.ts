@@ -23,7 +23,7 @@ const config: PlaywrightTestConfig = {
      *
     timeout: 10000
   },*/
-  testMatch: ["API_TC3.spec.ts"],
+ //testMatch: ["API_TC3.spec.ts"],
   use: {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     actionTimeout: 0,
