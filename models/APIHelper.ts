@@ -39,7 +39,6 @@ export class APIHelper extends SmokeSteps{
             if(status == 200){
                 var userID = result[0]['id'];
                 var userName = result[0]['name']
-                console.log(result);
                 if(result.length == 1){
                     if((userID == id) && (userName == name)){
                         console.log("Actual and Expected ID/Name does matched"
@@ -54,6 +53,8 @@ export class APIHelper extends SmokeSteps{
                         +"\nActual Name: "+name
                         +"\nExpected Name: "+userName);
                     }
+                }else{
+                    console.log(result);
                 }
             }else{
                 throw new Error("API Request was NOT successful");

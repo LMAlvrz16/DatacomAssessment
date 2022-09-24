@@ -12,7 +12,6 @@ import { devices } from '@playwright/test';
  */
 const config: PlaywrightTestConfig = {
   /* Maximum time one test can run for. */
-  workers: process.env.CI ? 4 : undefined,
   timeout: 900000,
   globalTimeout: 3000000,
   reporter: [ ['list'], ['junit', { outputFile: 'results/results.xml' }] ],
