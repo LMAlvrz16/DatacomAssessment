@@ -4,7 +4,7 @@ import { URL } from "../data/users"
 
 export class APIHelper extends SmokeSteps{
     readonly page: Page
-     request: APIRequestContext
+    request: APIRequestContext
 
     constructor(page: Page, request: APIRequestContext){
         super(page);
