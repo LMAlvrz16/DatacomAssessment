@@ -85,10 +85,10 @@ export class Common{
     async WaitForElementToBeHidden(locator: string, milliSeconds: number = 0){
       try{
         if(milliSeconds > 0){
-          await this.page.waitForSelector(locator, { timeout: milliSeconds, state: "hidden"});
+          await this.page.waitForSelector(locator, { timeout: milliSeconds, state: "detached"});
         }
         else{
-          await this.page.waitForSelector(locator, { timeout: 90000, state: 'hidden'});
+          await this.page.waitForSelector(locator, { timeout: 90000, state: 'detached'});
         }
       }
       catch(e){
